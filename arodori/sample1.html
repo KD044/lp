@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>高級串カツコース料理専門店｜一本の串に、四季を閉じ込める。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        font-family:
+          "Noto Sans JP",
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont;
+        background-color: #0d0d0d;
+        color: #ffffff;
+        line-height: 1.8;
+      }
+      .wrapper {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 16px 80px;
+      }
+      header {
+        padding: 40px 0 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 32px;
+        border-bottom: 1px solid #333;
+      }
+      header .copy {
+        flex: 1 1 320px;
+      }
+      h1 {
+        font-family: "Yu Mincho", "游明朝", serif;
+        font-size: 2.2rem;
+        margin: 0 0 16px;
+      }
+      h2 {
+        font-family: "Yu Mincho", "游明朝", serif;
+        font-size: 1.6rem;
+        margin: 40px 0 12px;
+      }
+      h3 {
+        font-size: 1.1rem;
+        margin: 24px 0 8px;
+        font-weight: 600;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      .sub {
+        font-size: 1rem;
+        color: #cccccc;
+      }
+      .cta {
+        margin-top: 24px;
+      }
+      .btn-primary {
+        display: inline-block;
+        padding: 12px 32px;
+        background-color: #c9a86a;
+        color: #0d0d0d;
+        text-decoration: none;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        font-size: 0.95rem;
+      }
+      .btn-primary:hover {
+        background-color: #0d0d0d;
+        color: #c9a86a;
+        border: 1px solid #c9a86a;
+      }
+      .hero-image {
+        flex: 1 1 320px;
+        min-height: 220px;
+        background:
+          url("./shop.png") center/cover no-repeat,
+          radial-gradient(circle at 30% 0%, #c9a86a 0, #0d0d0d 55%);
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-image::after {
+        content: "揚げたての一本を、あなたのために。";
+        position: absolute;
+        bottom: 16px;
+        right: 20px;
+        font-size: 0.8rem;
+        color: #eee;
+        opacity: 0.8;
+      }
+      section {
+        padding-top: 40px;
+      }
+      .section-inner {
+        border-top: 1px solid #222;
+        padding-top: 32px;
+      }
+      ul {
+        margin: 0 0 12px 1.2em;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+      .col {
+        flex: 1 1 320px;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid #c9a86a;
+        color: #c9a86a;
+        margin-bottom: 12px;
+      }
+      .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 12px;
+      }
+      .card {
+        flex: 1 1 280px;
+        border: 1px solid #333;
+        border-radius: 12px;
+        padding: 16px;
+        background-color: #111111;
+      }
+      .small {
+        font-size: 0.85rem;
+        color: #bbbbbb;
+      }
+      footer {
+        border-top: 1px solid #333;
+        padding-top: 32px;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #777;
+      }
+      @media (max-width: 768px) {
+        header {
+          padding-top: 24px;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ファーストビュー -->
+      <header>
+        <div class="copy">
+          <span class="tag">高級串カツコース料理専門店</span>
+          <h1>一本の串に、四季を閉じ込める。</h1>
+          <p class="sub">
+            揚げ物の概念を変える、<br />
+            “食べる芸術”としての串カツコース。
+          </p>
+          <div class="cta">
+            <a href="#reserve" class="btn-primary">本日の空席を確認する</a>
+          </div>
+        </div>
+        <div
+          class="hero-image"
+          aria-label="職人が揚げたての串カツを仕上げるイメージ"
+        ></div>
+      </header>
+
+      <!-- コンセプト -->
+      <section id="concept">
+        <div class="section-inner">
+          <h2>串カツを、料理の最前線へ。</h2>
+          <div class="columns">
+            <div class="col">
+              <p>
+                大阪の庶民文化として親しまれてきた串カツを、<br />
+                職人の技術と旬の食材で“コース料理”へ昇華しました。
+              </p>
+              <p>
+                揚げたての香り、衣の音、素材の甘み。<br />
+                五感すべてで味わう、新しい食体験をお届けします。
+              </p>
+            </div>
+            <div class="col">
+              <p class="small">
+                ※店内はカウンター中心の静かな空間。<br />
+                揚げ音まで楽しめる距離感で、特別な夜を演出します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- コース紹介 -->
+      <section id="course">
+        <div class="section-inner">
+          <h2>季節の串カツコース（12本）</h2>
+          <p>
+            一本ごとに驚きがある。<br />
+            次の串が待ち遠しくなるコースです。
+          </p>
+          <div class="columns">
+            <div class="col">
+              <h3>コース内容（一例）</h3>
+              <ul>
+                <li>旬野菜の一口串</li>
+                <li>走りの魚介の串</li>
+                <li>黒毛和牛のレアカツ</li>
+                <li>トリュフ香るポルチーニの串</li>
+                <li>季節の果物を使った甘味串</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>楽しみ方</h3>
+              <p>
+                一本ずつ、職人が最適なタイミングでお出しします。<br />
+                「次はどんな食材だろう」と想像しながら、<br />
+                コース全体を物語のように味わっていただけます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- こだわり -->
+      <section id="commitment">
+        <div class="section-inner">
+          <h2>一本の串ができるまでの、計算されたこだわり。</h2>
+          <div class="columns">
+            <div class="col">
+              <h3>職人の技術</h3>
+              <ul>
+                <li>食材ごとに揚げ温度を変える繊細な火入れ</li>
+                <li>油は 3 種類をブレンドし、軽さと香りを両立</li>
+                <li>“音が立つ薄衣”を追求した独自の衣配合</li>
+                <li>毎朝市場で仕入れる旬の食材のみを使用</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>味わい方の提案</h3>
+              <ul>
+                <li>ソースではなく、塩・出汁・ペアリングで楽しむ</li>
+                <li>食材ごとに最適な味付けを職人がご案内</li>
+                <li>揚げ物なのに、食後が軽い設計</li>
+              </ul>
+              <p>
+                素材 × 温度 × 音 × 香り。<br />
+                すべてを計算して一本の串が完成します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 体験ストーリー -->
+      <section id="story">
+        <div class="section-inner">
+          <h2>「串カツのイメージが変わった」その声が、私たちの誇りです。</h2>
+          <div class="columns">
+            <div class="col">
+              <h3>Before</h3>
+              <ul>
+                <li>串カツ＝庶民的で重いイメージ</li>
+                <li>揚げ物は、特別な日の選択肢になりにくい</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>After</h3>
+              <ul>
+                <li>揚げ物なのに軽く、香りが立つコース料理</li>
+                <li>デート・記念日に選ばれる「特別な串カツ」</li>
+              </ul>
+              <p>
+                揚げ物なのに、食後が軽い。<br />
+                それが“職人の揚げ”です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 店舗紹介 -->
+      <section id="shop">
+        <div class="section-inner">
+          <h2>揚げ音まで味わう、特別な夜。</h2>
+          <div class="columns">
+            <div class="col">
+              <h3>空間</h3>
+              <ul>
+                <li>カウンター 8 席の隠れ家スタイル</li>
+                <li>木目と黒を基調とした落ち着いた照明</li>
+                <li>職人の手元が見えるライブキッチン</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>シーン</h3>
+              <ul>
+                <li>大切な人との記念日ディナーに</li>
+                <li>仕事終わりのご褒美として</li>
+                <li>美食家の方へのサプライズとして</li>
+              </ul>
+              <p class="small">
+                ※席数が限られているため、事前予約をおすすめしております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- お客様の声 -->
+      <section id="voice">
+        <div class="section-inner">
+          <h2>お客様の声</h2>
+          <div class="card-list">
+            <div class="card">
+              <p>
+                「串カツの概念が変わりました。<br />
+                一つひとつの食材の香りが立っていて、<br />
+                最後まで軽やかに楽しめました。」
+              </p>
+            </div>
+            <div class="card">
+              <p>
+                「デートで利用しました。<br />
+                ライブ感のあるカウンターと、<br />
+                落ち着いた空間がとても印象的でした。」
+              </p>
+            </div>
+            <div class="card">
+              <p>
+                「揚げ物なのに、翌朝まで重さを感じませんでした。<br />
+                コースとしての満足度も高く、<br />
+                また季節が変わったら伺いたいです。」
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 予約導線 -->
+      <section id="reserve">
+        <div class="section-inner">
+          <h2>ご予約について</h2>
+          <div class="columns">
+            <div class="col">
+              <h3>コース料金</h3>
+              <p>
+                季節の串カツコース（12本）<br />
+                〇〇〇〇円（税込）<br />
+                ※仕入れ状況により内容が変わる場合がございます。
+              </p>
+            </div>
+            <div class="col">
+              <h3>ご予約方法</h3>
+              <p>
+                お電話またはオンライン予約フォームより承っております。<br />
+                本日ご用意できる席は、わずかです。<br />
+                ご希望日時がお決まりでしたら、お早めにご予約ください。
+              </p>
+              <div class="cta">
+                <a href="#" class="btn-primary">本日の空席を確認する</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 高級串カツコース料理専門店</p>
+      </footer>
+    </div>
+  </body>
+</html>
