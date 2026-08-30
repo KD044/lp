@@ -199,6 +199,7 @@
         color: var(--accent-gold);
         letter-spacing: 0.3em;
         margin-bottom: 24px;
+        white-space: normal;
       }
 
       .hero-title {
@@ -279,6 +280,7 @@
         margin: 0 auto;
         text-align: center;
         position: relative;
+        margin-bottom: 10px;
       }
 
       .course-badge {
@@ -314,7 +316,7 @@
         border-top: 1px dashed rgba(255, 255, 255, 0.1);
         border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
         padding: 32px 0;
-        margin-bottom: 32px;
+        {% comment %} margin-bottom: 32px; {% endcomment %}
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
@@ -443,8 +445,22 @@
           display: none; /* シンプル化のためスマホではナビ非表示（実装時にハンバーガーメニュー等に拡張可能） */
         }
 
+        .hero-catch {
+          letter-spacing: 0.12em;
+          line-height: 1.8;
+        }
+        .section-padding {
+          padding: 20px 0;
+        }
+
         .hero-title {
           font-size: 2.2rem;
+        }
+        .section-title .jp {
+          font-size: 1.8rem;
+        }
+        .responsive-inline {
+          display: inline-block;
         }
 
         .concept-grid,
@@ -462,6 +478,19 @@
 
         .course-card {
           padding: 24px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .nav-list {
+          display: none; /* シンプル化のためスマホではナビ非表示（実装時にハンバーガーメニュー等に拡張可能） */
+        }
+
+        .hero-title {
+          font-size: 1.8rem;
+        }
+        .section-title .jp {
+          font-size: 1.3rem;
         }
       }
     </style>
@@ -485,11 +514,19 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-catch">極上のひとときを味わう、一串の芸術</p>
+        <p class="hero-catch">
+          極上のひとときを味わう、<span class="responsive-inline"
+            >一串の芸術</span
+          >
+        </p>
         <h1 class="hero-title">
           伝統と革新が織りなす<br />創作高級串カツコース
         </h1>
-        <p class="hero-sub">完全予約制・全席カウンターの贅沢な空間で</p>
+        <p class="hero-sub">
+          完全予約制・全席カウンターの<span class="responsive-inline"
+            >贅沢な空間で</span
+          >
+        </p>
       </div>
     </section>
 
@@ -504,7 +541,11 @@
                 串カツの概念を変える、<br />軽やかな揚がりと芳醇な香り
               </h2>
             </div>
-            <h3>「揚げ物」を超えた、極上の串カツ</h3>
+            <h3>
+              「揚げ物」を超えた、<span class="responsive-inline"
+                >極上の串カツ</span
+              >
+            </h3>
             <p>
               厳選された旬の高級食材、部位ごとに最適な仕込みを施し、特製の極薄衣で包み込みます。
             </p>
@@ -539,6 +580,25 @@
             <li>シャトーブリアン</li>
             <li>はまぐり</li>
             <li>サーモンいくら etc...</li>
+          </ul>
+        </div>
+        <div class="course-card" style="marge">
+          <h3 class="course-name">彩り コース</h3>
+          <p class="course-price">4,000 <span>円 </span></p>
+
+          <ul class="course-menu">
+            <li>宮城牛ランプ</li>
+            <li>季節のお野菜</li>
+            <li>海老 etc...</li>
+          </ul>
+        </div>
+        <div class="course-card">
+          <h3 class="course-name">あて飲み</h3>
+          <p class="course-price">2,000 <span>円 </span></p>
+
+          <ul class="course-menu">
+            <li>串カツ3種類</li>
+            <li>1ドリンク</li>
           </ul>
         </div>
       </div>
@@ -624,7 +684,15 @@
                 color: var(--text-sub);
               "
             >
-              [ Google Maps 埋め込みエリア ]
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.6957065825309!2d135.4779460132919!3d34.57381387192115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dd8a6db00029%3A0xb988ff5aeeca48e2!2z5Liy5o-a44GS5paZ55CG44CM5b2p44KK44CN!5e0!3m2!1sja!2sjp!4v1788107273546!5m2!1sja!2sjp"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
             </div>
           </div>
         </div>
